@@ -365,7 +365,6 @@
             }
         }   
     }
-
     &-images{
         width: 114px;
         height: 114px;
@@ -384,11 +383,9 @@
         margin-bottom: 30px;
         transition: all .5s;
     }
-
     &-text{
         font-size: 15px;
     }
-
 }
 
 .icons-svg{
@@ -400,3 +397,45 @@
 } 
 
 //End Advantages block
+
+
+
+//Start author block
+
+.author{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-box{
+        max-width: 650px;
+        width: 100%;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
+
+    &-title{
+        font-size: 30px;
+        line-height: 36px;
+        color: #fff;
+        max-width: 266px;
+        margin-right: 50px;
+        span{
+         font-weight: 700;
+        }
+    }
+    &-link{
+        font-size: 18px;
+        background-color: #fff;
+        color: $bg;
+        padding: 18px 42px;   
+    }
+}
+//End author block
+
