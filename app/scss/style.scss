@@ -383,9 +383,7 @@
         margin-bottom: 30px;
         transition: all .5s;
     }
-    &-text{
-        font-size: 15px;
-    }
+    
 }
 
 .icons-svg{
@@ -471,5 +469,187 @@
         padding: 30px 15px;
     }
 }
-
 // End tutorial block 
+
+
+//Start footer
+
+.footer{
+    background-color: $bg;
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+      padding: 100px 0px 80px;
+    }
+}
+
+.footer__copy{
+    border-top: solid 1px rgb(66, 77, 83);;
+    &-text{
+        text-align: center;
+        padding: 25px 0;
+        color: #8a8f93;
+    }
+
+}
+
+.footer__col{
+
+ max-width: 270px;
+ width: 100%;
+
+
+    &-title{
+        font-size: 22px;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        padding-bottom: 26px;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            content: '';
+            width: 50px;
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            background-color: $green;  
+        }
+    }
+
+    &-text{
+        color: $grey;
+        margin-bottom: 30px;
+
+
+
+    }   
+
+}
+.footer__col-menu{
+    max-width: 220px;
+}
+.footer__info{
+    margin-top: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+        content: '\f041';
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 18px;
+
+    }
+}
+.footer__info-phone{
+    &::before{
+        content: '\f095';
+    }
+}
+
+.footer__col-list{
+    position: relative;
+    a{
+       color: $grey;
+       margin-bottom: 15px; 
+       padding-left: 22px;
+       &::before{
+           content: '\f105';
+           font-family: 'icomoon';
+           position: absolute;
+           left: 0;
+           color: $green;
+           font-size: 18px;
+       }
+    }
+}
+.footer__social-link{
+    margin-bottom: 33px;
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 6px;
+        }
+    }
+    a{
+        width: 28px;
+        height: 28px;
+        background-image: url(../images/icons/css_sprites.png);
+        & + a{
+            margin-left: 7px;
+            
+        }
+    }
+}
+.link-facebook{
+    background-position: 0px -0;
+}
+.link-twiter{
+  background-position: -28px -0;
+}
+.link-youtube{
+    background-position: -56px -0;
+}
+.link-pinterest{
+    background-position: -84px -0;
+}
+.link-linkedin{
+    background-position: -112px -0;
+}
+
+.footer__form-title{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;   
+}
+
+.footer__form{
+    position: relative;
+    
+    input{
+       border: none;
+       background-color: #2f3c43; 
+       display: block;
+       width: 100%;
+    //    box-shadow: 3px -3px 0px -2px rgb(3, 5, 0);
+       outline: none;
+       height: 40px;
+       color: #697378;
+       font-size: 14px;
+       padding-left: 13px;
+       padding-right: 50px;
+       &::placeholder{
+        color: #697378;
+       }   
+    }
+    button{
+        width: 43px;
+        height: 40px;
+        position: absolute;
+        border: none;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        outline: none;
+        background-color: $green;
+            &::before{
+             content: '\f124';
+             font-family: 'icomoon';
+             position: absolute;
+             top: 11px;
+             left: 13px;
+             color: #fff;
+             font-size: 18px;
+    
+        }
+    }
+}
+
+
+
+// End Footer
