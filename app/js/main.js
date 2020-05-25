@@ -1,6 +1,16 @@
 $(function(){
 
 
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 0,
+        to: 600,
+        prefix: "$"
+    });
+
+
     $('.rate-star').rateYo({
         rating: 5,
         readOnly: true,
@@ -18,8 +28,21 @@ $(function(){
         
     });
 
+    $('.icon-th-list').on('click', function(){
+        $('.item-page').addClass('list');
+        $('.icon-th-list').addClass('active');
+        $('.icon-th-large').removeClass('active');
+    });
 
-    var mixer = mixitup('.product__inner-box');
+    $('.icon-th-large').on('click', function(){
+        $('.item-page').removeClass('list');
+        $('.icon-th-large').addClass('active');
+        $('.icon-th-list').removeClass('active');
+    });
+    
+
+
+  var mixer = mixitup('.product__inner-box');
 
    
 });
