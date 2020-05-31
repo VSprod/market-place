@@ -42,7 +42,7 @@ $(function(){
     
 
 
-  var mixer = mixitup('.product__inner-box');
+  let mixer = mixitup('.product__inner-box');
 
    
 });

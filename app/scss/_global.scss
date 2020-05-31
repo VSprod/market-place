@@ -120,3 +120,15 @@ body{
         
     }
 }
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        font-family: 'icomoon';
+        content: "\f105";
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
+    }
+}
