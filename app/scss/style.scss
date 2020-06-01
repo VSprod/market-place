@@ -116,6 +116,7 @@
     }
 }
 .basket{
+    margin-right: 20px;
     span{
         background-color: #95c85a;
     }
@@ -132,7 +133,7 @@
 }
 
 .user{
-    margin-left: 15px;
+    
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -180,7 +181,7 @@
 
 
 .user__menu{
-    top: 69px;
+    top: 68px;
     left: 16px;
     border-top: 0px solid rgb(204, 204, 204);
     position: absolute;
@@ -190,6 +191,7 @@
     transition: all .3s;
     height: 0;
     overflow: hidden; //Отображается только область внутри элемента, остальное будет скрыто
+    z-index: 2;
     a{
         font-size: 12px;
         color: #546e7a;
@@ -207,8 +209,8 @@
 .message__box,
 .notification__box{
     position: relative;
-    height: 68px;
-    margin-top: 23px;
+    height: 67px;
+    margin-top: 24px;
     
     
 
@@ -231,13 +233,14 @@
     height: 0;
     overflow: hidden; 
     transition: all .3s;
+    z-index: 2;
 }
 
 
 .basket__box,
 .message__box,
 .notification__box{
-    margin-top: 40px;
+    margin-top: 39px;
     margin-left: 15px;
     &:hover{
         .sercle__menu{
@@ -343,6 +346,11 @@
 }
 .icons-active::before{
     color: #ef6c00;
+}
+
+.header__btn-menu,
+.menu__btn{
+    display: none;
 }
 // header finish
 
@@ -1332,9 +1340,9 @@ button.icon-unsorted{
     }
 
    
-}
+}  
 
-   
+@import '_media';
 
   
 //End Product Page 
