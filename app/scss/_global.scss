@@ -40,7 +40,9 @@ body{
 	min-height: 100%;
 }
 .content {
-	flex: 1 0 auto;
+    flex: 1 0 auto;
+    
+    
 }
 .footer {
 	flex: 0 0 auto;
@@ -50,6 +52,8 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    
+    
 
 }
 
@@ -67,7 +71,9 @@ body{
     }
     
 }
-
+.content{
+    background-color: $bg-grey;
+}
 .page-content{
     background-color: $bg-grey;
 }
